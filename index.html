@@ -7,41 +7,62 @@
     <title>Weather App Project</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Augusta</h1>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-date" id="current-date">Wednesday 17:58</div>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Augusta</h1>
+            <p class="current-details">
+              Humidity: <strong>33%</strong> <br />
+              Wind: <strong>2.1mph</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-symbol">☀️</span>
+            <span
+              class="current-temperature-value"
+              id="current-temperature-value"
+              >14</span
+            >
+            <span class="current-temperature-unit">°F</span>
+          </div>
+        </div>
+      </main>
+      <footer>
         <p>
-          Humidity: 30% <br />
-          Wind: 3mph
+          This project was coded by
+          <a href="https://github.com/mainlyti" target="_blank"
+            >Tianna Mendoza</a
+          >
+          and is
+          <a
+            href="https://github.com/mainlyti/weather-app-project"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a
+            href="https://weatherapp-project-shecodes.netlify.app/"
+            target="_blank"
+            >hosted on Netlify</a
+          >
         </p>
-      </div>
-      <div>☀️74°F</div>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="https://github.com/mainlyti" target="_blank">Tianna Mendoza</a>
-        and is
-        <a
-          href="https://github.com/mainlyti/weather-app-project"
-          target="_blank"
-        >
-          on GitHub</a
-        >
-        and
-        <a
-          href="https://weatherapp-project-shecodes.netlify.app/"
-          target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script src="src/index.js"></script>
 </html>
