@@ -1,5 +1,9 @@
 body {
-  background: #f9f7fe;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(216, 241, 230, 0.129) 0.1%,
+    rgba(233, 226, 226, 0.149) 90.1%
+  );
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,7 +24,7 @@ footer {
 }
 
 a {
-  color: #885df1;
+  color: #867e6c;
 }
 
 .weather-app {
@@ -33,7 +37,7 @@ a {
 }
 
 .search-input {
-  background: #f9f7fe;
+  background: #d4425f11;
   border: none;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
@@ -44,7 +48,7 @@ a {
 
 .search-button {
   color: white;
-  background: #885df1;
+  background: #d4425e;
   border: none;
   font-size: 16px;
   border-radius: 5px;
@@ -55,6 +59,7 @@ a {
 
 .current-date {
   text-align: center;
+  font-size: 22px;
 }
 .current-weather {
   display: flex;
@@ -75,7 +80,7 @@ a {
 }
 
 .current-details strong {
-  color: #f65282;
+  color: #dc585e;
 }
 
 .current-temperature-symbol {
