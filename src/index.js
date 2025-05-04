@@ -8,7 +8,9 @@ function currentTemperature(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#current-date");
   let date = new Date(response.data.time * 1000);
+  let symbolElement = document.querySelector("#symbol");
 
+  symbolElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-symbol" />`;
   cityElement.innerHTML = response.data.city;
   dateElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
