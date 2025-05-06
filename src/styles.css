@@ -99,3 +99,33 @@ a {
   position: relative;
   top: -38px;
 }
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.weather-forecast-symbol {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #dc585e;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forecast-temperature {
+  padding: 0 3px;
+}
