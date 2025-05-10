@@ -1,8 +1,8 @@
 body {
   background: radial-gradient(
     circle at 10% 20%,
-    rgba(216, 241, 230, 0.589) 0.1%,
-    rgba(233, 226, 226, 0.39) 90.1%
+    rgba(216, 241, 230, 0.299) 0.1%,
+    rgba(233, 226, 226, 0.21) 90.1%
   );
   font-family: "Roboto", sans-serif;
 }
